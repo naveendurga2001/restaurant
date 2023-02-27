@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./restarent.css">
+
+    <!-- aos css link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container-main m-auto">
+        <!-- header -->
+        <header class="header position-fixed bg-white z-3">
+            <nav class="main-nav container m-auto d-flex justify-content-between align-items-center">
+
+                <!--  Logo Start -->
+                <a href="./index.html" class="logo ">
+                    RESTAURANT
+                </a>
+                <!-- Logo End -->
+                <!-- Menu Start -->
+                <div class="navbar ">
+                    <ul class="nav-menu">
+                        <li class="nav-item ">
+                            <a href="./index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="./index.html#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./menu.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="has-sub ">
+                            <div class="dropdown ">
+                                <button class="btn1 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    More
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark text-center">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Events</a></li>
+                                    <li><a class="dropdown-item" href="#">Specials</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">Chefs</a></li> -->
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./index.html#chefs">Chefs</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link actived">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <button type="button" class="btn btn-outline-danger h-50 ">
+                    <a href="#booking" class="text-danger">Book A Table</a>
+                </button>
+                <div class="hamburger ">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <!-- Menu End -->
+            </nav>
+        </header>
+
+        <!-- book a table -->
+        <section class="booking pt-5" id="booking">
+            <div class="container m-auto mt-5">
+                <p class="fs-5">Reservation _____</p>
+                <h1 class="heading">Book A table</h1>
+                <div class="row ">
+                    <div class="imagecontant col-lg-4 h-25">
+                        <img src="./imges/book a table.webp" alt="" width="100px" height="20px">
+                    </div>
+                    <div class="col-lg-8  book ps-lg-5 pt-5">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form ">
+                            <div class="row align-content-center">
+                                <div class="form-group col-lg-3 m-3 ">
+                                    <input type="text" name="name" class="form-control text-center p-2" id="name"
+                                        placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group col-lg-3 m-3">
+                                    <input type="email" class="form-control text-center p-2" name="email" id="email"
+                                        placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group col-lg-3 m-3">
+                                    <input type="text" name="name" class="form-control text-center p-2" id="name"
+                                        placeholder="Your Phone" required>
+                                </div>
+                                <div class="form-group col-lg-3 m-3 ">
+                                    <input type="text" name="name" class="form-control text-center p-2" id="name"
+                                        placeholder="Date" required>
+                                </div>
+                                <div class="form-group col-lg-3 m-3">
+                                    <input type="text" name="name" class="form-control text-center p-2" id="name"
+                                        placeholder="Time" required>
+                                </div>
+                                <div class="form-group col-lg-3 m-3 ">
+                                    <input type="text" name="name" class="form-control text-center p-2" id="name"
+                                        placeholder="# Of people" rows="2" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-10 m-3">
+                                <!-- <label for="name">Message</label> -->
+                                <textarea class="form-control " name="message" rows="5" placeholder="Massage"
+                                    required></textarea>
+                            </div>
+
+                            <div class="text-center rounded">
+                                <button type="submit" class="send p-2 mt-5 ">Book A Table</button>
+                            </div>
+                        </form>
+                    </div>=
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section class="contact pt-5">
+            <div class="container pt-5 m-auto">
+                <p class="fs-5">Contact____</p>
+                <h1 class="heading">Contact Us</h1>
+                <div class="details">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                        frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                </div>
+                <div class="row info">
+                    <div class="adderes col-lg-6 pt-4">
+                        <div class="address col-lg-6 ">
+                            <i class="bi bi-geo-alt fs-5 me-3 mt-3"></i>
+                            <h4 class="d-inline-block ">Location:</h4>
+                            <p>west Godavari, ANDHRA PRADESH, INDIA 534 250</p>
+                        </div>
+
+                        <div class="email pt-4">
+                            <i class="bi bi-envelope  fs-5 me-3"></i>
+                            <h4 class="d-inline-block ">Email:</h4>
+                            <p>boddetnaveen129@gmail.com</p>
+                        </div>
+
+                        <div class="phone pt-4">
+                            <i class="bi bi-phone  fs-5 me-3"></i>
+                            <h4 class="d-inline-block ">Call:</h4>
+                            <p>+91 799 375 4431</p>
+                        </div>
+
+                        <div class="phone pt-4">
+                            <i class="bi bi-clock fs-5 me-3 mt-3"></i>
+                            <!-- <i class="bi bi-phone  fs-5 me-3"></i> -->
+                            <h4 class="d-inline-block ">Open Hours:</h4>
+                            <p>Monday - Sunday: <br>
+                                10:00 AM to 23:00 PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form pt-4">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group col-md-6 ps-1">
+                                    <label for="name">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Message</label>
+                                <textarea class="form-control" name="message" rows="10" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- footer -->
+        <section class="footer path-0">
+            <div class="container m-auto">
+                <div class="row pt-5 flex-wrap">
+                    <div class="data col-lg-3">
+                        <i class="bi bi-geo-alt text-white lh-lg pe-2 fs-5"></i>
+                        <h5 class="d-inline text-white">Address</h5>
+                        <p> A235 Adam Street
+                            <br>Andhra Pradesh,534250 - India
+                        </p>
+                    </div>
+                    <div class="data col-lg-3 ">
+                        <i class="bi bi-telephone text-white lh-lg pe-2 fs-5"></i>
+                        <h5 class="d-inline text-white">Reservations</h5>
+                        <p><span><b>Phone:</b></span> +7993754431
+                            <br><span><b>Email:</b></span>naveen143@gmail.com
+                        </p>
+                    </div>
+                    <div class="data col-lg-3 ">
+                        <i class="bi bi-clock text-white lh-lg pe-2 fs-5"></i>
+                        <h5 class="d-inline text-white">Opening Hours</h5>
+                        <p><span><b>Mon-Sat:</b></span> 10AM - 23PM
+                            <br>Friday: Closed
+                        </p>
+                    </div>
+                    <div class="data col-lg-3">
+                        <h5 class=" text-white lh-lg">Fllow Us</h5>
+                        <i class="bi bi-instagram me-4 fs-5"></i>
+                        <i class="bi bi-facebook me-4 fs-5"></i>
+                        <i class="bi bi-twitter me-4 fs-5"></i>
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <p class="ac">Designed by @Naveen &nbsp;&nbsp;&nbsp; 2023</p>
+            </div>
+        </section>
+
+        <!-- bootstrap cdn links -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
+        <!--  nav bar  -->
+        <script>
+
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+
+            hamburger.addEventListener("click", mobileMenu);
+
+            function mobileMenu() {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            }
+        </script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./restarent.css">
+    <!-- aos css link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container-main m-auto">
+        <!-- header -->
+        <header class="header position-fixed bg-white z-3">
+            <nav class="main-nav container m-auto d-flex justify-content-between align-items-center">
+
+                <!--  Logo Start -->
+                <a href="./index.html" class="logo ">
+                    RESTAURANT
+                </a>
+                <!-- Logo End -->
+                <!-- Menu Start -->
+                <div class="navbar ">
+                    <ul class="nav-menu">
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link actived">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./menu.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="has-sub ">
+                            <div class="dropdown ">
+                                <button class="btn1 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    More
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark text-center">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Events</a></li>
+                                    <li><a class="dropdown-item" href="#">Specials</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">Chefs</a></li> -->
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#chefs">Chefs</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <button type="button" class="btn btn-outline-danger h-50 ">
+                    <a href="./contact.html#booking" class="text-danger">Book A Table</a>
+                </button>
+                <div class="hamburger ">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <!-- Menu End -->
+            </nav>
+        </header>
+
+        <!-- banner -->
+        <section class="banner ">
+            <div class="container m-auto ">
+                <div class="row ">
+                    <div class="ab">
+                        <div class="contant  col-lg-6 m-auto " data-aos="fade-right">
+                            <h1>Enjoy Your Healthy
+                                <br> Delicious Food
+                            </h1>
+                            <p>Choose Campanile Hotels for a trip to the United-Kingdom at the Lowest Prices !Restaurant
+                                services are the services provided by a restaurant to its customers.</p>
+                            <button type="button" class="btn btn-outline-danger">
+                                <a href="./contact.html#booking" class="text-danger">Book A Table</a>
+                            </button>
+                            <a href="https://www.youtube.com/watch?v=lk99tsBF9Kw&t=11s"><i
+                                    class="bi bi-play-circle text-danger me-2 fs-4 fw-bolder"></i>Watch Video</a>
+
+                        </div>
+                        <div class="imgcontant col-lg-6 m-auto" data-aos="fade-left">
+                            <img src="./imges/undraw_special_event_4aj8.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- about us -->
+        <section class="about" id="about">
+            <div class="container m-auto">
+                <p class="fs-3 text-white pt-4">About Us____</p>
+                <h1 class="heading"> Learn More About Us</h1>
+                <div class="row mt-5">
+                    <div class="pick col-lg-6" data-aos="fade-up">
+                        <img src="https://img.freepik.com/premium-photo/assorted-indian-recipes-food-various_79295-7226.jpg?w=1060"
+                            alt="">
+                    </div>
+                    <div class="text-contant col-lg-6 ms-5" data-aos="fade-up">
+                        <p>Since our modest beginnings in 2005 with a little space in Toronto’s stylish Yorkville
+                            locale,
+                            ‘Organization Name’ ‘s development has been enlivened with the energy to cook and serve
+                            solid, Indian-roused takeout food.</p>
+                        <ul class="cd">
+                            <li class="cd">In contrast to other Indian eateries, ‘Organization Name’ was made with the
+                                explicit expectation to appear as something else.</li>
+                            <li class="cd">We realize numerous individuals love Indian sustenance, yet a large number of
+                                them loathe or are unconscious of the regularly unfortunate
+                                fixings that make run-of-the-mill Indian nourishment taste so great.
+                            </li>
+                            <li class="cd">Our menu highlights things that utilize the sound and fragrant flavors,
+                                however, forget the stuffing ghee, spread, oil, and overwhelming cream.</li>
+                        </ul>
+                        <p> We perceive that a few people are as yet searching for run-of-the-mill Indian nourishment,
+                            and that is fine with us. Our disclaimer is that on the off chance that you’re anticipating
+                            overwhelming, slick, undesirable Indian nourishment, ‘Organization Name’ isn’t the place for
+                            you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- why us -->
+        <section class="why mt-5 bg-white">
+            <div class="container m-auto pt-4">
+                <p class="fs-4">WHY US _________</p>
+                <h1 class="heading">Why Choose Our Restaurant</h1>
+                <div class="row row-card">
+                    <div data-aos="zoom-in" data-aos-delay="100" class="card col-lg-3 ">
+                        <h2>01</h2>
+                        <h3>Restaurant Location</h3>
+                        <p>Location is nearly as important as the quality of your food to new customers. No matter how
+                            good your food tastes, if you are too far away, new customers will not come over</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="100" class="card col-lg-3 ">
+                        <h2>02</h2>
+                        <h3>Customer Reviews</h3>
+                        <p>Seeing how important customer reviews are, you should map out a strategy to get your
+                            customers to leave you reviews. Moreover, you need to actively publicize your positive
+                            reviews.</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="100" class="card col-lg-3 ">
+                        <h2>03</h2>
+                        <h3>Restaurant Ambience</h3>
+                        <p>If you are looking to attract people on a romantic date, a place with flowers and really soft
+                            music will be great. But a quiet and serene atmosphere is the best if you are trying to
+                            attract business people.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events -->
+        <section class="events">
+            <div class="container m-auto">
+                <p class="text-white pt-5 fs-4">Events_____</p>
+                <h1 class="heading ">Organize your Events in Our restarent</h1>
+                <div class="swiper mySwiper mt-5 ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                            <div class="slide">
+                                <img src="./imges/events-3.webp" alt="">
+                                <div class="text">
+                                    <h3>Birthday Parties</h3>
+                                    <p>If you’re looking for ways to celebrate a birthday during this stay at home
+                                        period of our lives, I’ve got you covered. Here are 30 ways you can make
+                                        celebrating a birthday at home this year special.
+                                        <br> 1 – Play A Game!
+                                        Send everyone a copy of a printable game before the party then play together on
+                                        the group video call.
+                                        <br> 2 – Sing Happy Birthday With Cake.
+                                        Have everyone sing happy birthday on the call while you bring out the cake and
+                                        blow out candles.
+                                        <br>3 – Make It A Movie Night.
+                                        Netflix currently has an option to watch movies together and chat about them on
+                                        the screen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="slide">
+                                <img src="./imges/events-2.webp" alt="">
+                                <div class="text">
+                                    <h3>Private Parties</h3>
+                                    <p>an event open only to invited guests and not open or advertised to the general
+                                        public. “Private party” does not include alcohol industry promotional events or
+                                        other events with a commercial purpose.
+                                        <br> Who needs an occasion to celebrate or party with your family and friends?
+                                        Honestly nobody! Just pack your bags and buy some snacks on your way. Want to
+                                        host a chilling party for your friends? It’s been a while since you had your
+                                        last party and now you are looking for an escape from this robotic life on this
+                                        long weekend. Well, we are here to help you out with your little problem.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="slide slide3">
+                                <img src="./imges/events-1.webp" alt="">
+                                <div class="text">
+                                    <h3>Fastival special Parties</h3>
+                                    <p>It's time to highlight your festive menu dishes or even curate a separate menu
+                                        for a specific festival - one should definitely for Navratre Special Menu or
+                                        Christmas/NYE Brunches. It helps to engage your customer's attention.
+                                        <br> Take important festivals as an opportunity to host exciting events that can
+                                        include musical Sufi/Bollywood/rock nights or Christmas Brunches.
+                                        <br>Keeping competition asides, come up with exciting offers and vouchers during
+                                        the festive season as everybody likes something extra - It also keeps your
+                                        customers engaged.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- chefs -->
+    <section class="chefs pt-5" id="chefs">
+        <div class="container m-auto">
+            <p class="fs-4">CHEFS______</p>
+            <h1 class="heading">Our Proffesional Chefs</h1>
+            <div class="row pt-5">
+                <div class="cards col-lg-3 shadow-lg me-5 bg-body-tertiary rounded" data-aos="flip-left" >
+                    <img src="./imges/chef1.webp" alt="">
+
+                    <div class="sub sub1">
+                        <h3 class="lh-sm">Walter white</h3>
+                        <p class="lh-lg">Master Chef</p>
+                        <i class="bi bi-instagram me-3 fs-5"></i>
+                        <i class="bi bi-facebook me-4 fs-5"></i>
+                        <i class="bi bi-twitter me-3 fs-5"></i>
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </div>
+                </div>
+
+                <div class="cards col-lg-3 shadow-lg me-4 bg-black rounded" data-aos="flip-left" >
+                    <img src="./imges/chef2.webp" alt="">
+                    <div class="sub sub2">
+                        <h3 class="lh-sm">Sarah johnsan</h3>
+                        <p class="lh-lg">Patissier</p>
+                        <i class="bi bi-instagram me-3 fs-5"></i>
+                        <i class="bi bi-facebook me-4 fs-5"></i>
+                        <i class="bi bi-twitter me-3 fs-5"></i>
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </div>
+                </div>
+
+                <div class="cards col-lg-3 shadow-lg  bg-body-tertiary rounded" data-aos="flip-left" >
+                    <img src="./imges/chef3.webp" alt="">
+                    <div class="sub sub3">
+                        <h3 class="lh-sm">William Anderson</h3>
+                        <p class="lh-lg">Cook</p>
+                        <i class="bi bi-instagram me-3 fs-5"></i>
+                        <i class="bi bi-facebook me-4 fs-5"></i>
+                        <i class="bi bi-twitter me-3 fs-5"></i>
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonial">
+        <div class="container m-auto ">
+            <p class="fs-4 pt-5">TESTIMONIALS_____</p>
+            <h1 class="heading">What Are They Saying About Us</h1>
+            <div class="swiper mySwiper  mt-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide massage m1">
+                        <div class="twitte-main">
+                            <p class="twitte fst-italic text-body-secondary">
+                                <i class="bi bi-quote fs-4 text-danger"></i>
+                                It’s a great experience. The ambiance is very welcoming and charming. Amazing wines,
+                                food and service. Staff are extremely knowledgeable and make great recommendations
+                                <i class="bi bi-quote fs-4 text-danger"></i>
+                            </p>
+                            <h2>john larson</h2>
+                            Enterprener <br>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <div class="custmor ">
+                            <img src="./imges/customer1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide massage m2">
+                        <div class="twitte-main">
+                            <p class="twitte fst-italic text-body-secondary">
+                                <i class="bi bi-quote fs-4 text-danger"></i>
+                                Delicious food, waiters are very attentive, and super nice atmosphere.Plus it’s all at
+                                an affordable price. The meals served rapidly and the rates were reasonable.
+                                <i class="bi bi-quote fs-4 text-danger"></i>
+                            </p>
+                            <h2>Sara wilsson</h2>
+                            Designer <br>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <div class="custmor ">
+                            <img src="./imges/customer2.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide massage m3">
+                        <div class="twitte-main">
+                            <p class="twitte fst-italic text-body-secondary">
+                                <i class="bi bi-quote fs-4 text-danger"></i>
+                                Loved this place. The atmosphere, food and most of the drinks were great. The bartenders
+                                knew their mixology and it showed in the drinks. Great place to hangout, chill or go out
+                                on a date.
+                                <i class="bi bi-quote fs-4 text-danger"></i>
+                            </p>
+                            <h2>john larson</h2>
+                            Ceo & Founder <br>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <div class="custmor ">
+                            <img src="./imges/customer3.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer path-0">
+        <div class="container m-auto">
+            <div class="row pt-5 flex-wrap">
+                <div class="data col-lg-3">
+                    <i class="bi bi-geo-alt text-white lh-lg pe-2 fs-5"></i>
+                    <h5 class="d-inline text-white">Address</h5>
+                    <p> A235 Adam Street
+                        <br>Andhra Pradesh,534250 - India
+                    </p>
+                </div>
+                <div class="data col-lg-3 ">
+                    <i class="bi bi-telephone text-white lh-lg pe-2 fs-5"></i>
+                    <h5 class="d-inline text-white">Reservations</h5>
+                    <p><span><b>Phone:</b></span> +7993754431
+                        <br><span><b>Email:</b></span>naveen143@gmail.com
+                    </p>
+                </div>
+                <div class="data col-lg-3 ">
+                    <i class="bi bi-clock text-white lh-lg pe-2 fs-5"></i>
+                    <h5 class="d-inline text-white">Opening Hours</h5>
+                    <p><span><b>Mon-Sat:</b></span> 10AM - 23PM
+                        <br>Friday: Closed
+                    </p>
+                </div>
+                <div class="data col-lg-3">
+                    <h5 class=" text-white lh-lg">Fllow Us</h5>
+                    <i class="bi bi-instagram me-4 fs-5"></i>
+                    <i class="bi bi-facebook me-4 fs-5"></i>
+                    <i class="bi bi-twitter me-4 fs-5"></i>
+                    <i class="bi bi-linkedin fs-5"></i>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <p class="ac">Designed by @Naveen &nbsp;&nbsp;&nbsp; 2023</p>
+        </div>
+    </section>
+
+
+    <!-- bootstrap and aos js cdn links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!--  nav bar  -->
+    <script>
+
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+
+    <!-- swiper events -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
